@@ -1,0 +1,137 @@
+-upk -ppk
+database : final
+
+create table question
+(
+gon INT not null primary key,
+g INT not null,
+n INT not null,
+q varchar(300) not null,
+c1 varchar(300) not null,
+c2 varchar(300) not null,
+c3 varchar(300) not null,
+c4 varchar(300) not null,
+ans varchar(300) not null
+);
+
+insert into question values (101, 1, 1, 'Which of the following is NOT a fundamental principle of object oriented programming?', 'Inheritance', 'Abstraction', 'Polymorphism', 'Encapsulation', 'Multithreading');
+insert into question values (102, 1, 2, 'What is constructor overloading?', 'None of the provided answers are correct.', 'There is no such thing in Java.', 'Constructors that have the same list of arguments.', 'Constructors that have the same amount of arguments.', 'Constructors that have different list of arguments.');
+insert into question values (103, 1, 3, 'What is the method overloading in Java?', 'None of the provided answers are correct.', 'Methods that have different name AND with different list of arguments.', 'Methods that have the same name AND with the same list of arguments.', 'Methods that have different name BUT with the same list of arguments.', 'Methods that have the same name BUT with different list of arguments.');
+insert into question values (104, 1, 4, 'What is the IDE for Java?', 'Eclipse', 'Xcode', 'NetBeans', 'Visual Studio', 'There are more than 1 correct answer provided.');
+insert into question values (105, 1, 5, 'How many ternary operator are in Java?', '4', '3', '2', '0', '1');
+insert into question values (106, 1, 6, 'What is function overriding?', 'All of the choices are correct.','None of the provided answers is correct.', 'A feather that allows a subclassto access its super-classes.', 'A feather that allows a class to have methodswith the same name.', 'A feature that allows a subclass to have a method thatis already provided by one of its super-classes.');
+insert into question values (107, 1, 7, 'What syntax is used for pointers', 'There are more than 1 correct answer provided.', '.', '->', '*', 'Java does NOT have pointers');
+insert into question values (108, 1, 8, 'Which of the following is NOT an access modifier in Java', 'Default', 'Private', 'Protected', 'Public', 'Internal');
+insert into question values (109, 1, 9, 'Given a one dimensional array arr, what is the correct way of getting the number of elements in arr.', 'arr.length()', 'arr.size', 'arr.sizearr.size()', 'arr.length - 1', 'arr.length');
+insert into question values (110, 1, 10, 'Which of the following is NOT a type of inheritance in Java?', 'Single', 'Multilevel', 'Hierarchical', 'Hybrid', 'Internal');
+insert into question values (111, 1, 11, 'What is the meaning of the return data type void?', 'An empty memory space is returned so that the developers can utilize it.', 'void is not supported in Java.', 'There are more than 1 correct answer provided.', 'null', 'void returns no data type.');
+insert into question values (112, 1, 12, 'How to define an object in Java?', 'None of the provided answers are correct.', 'ClassName object = new value;', 'ClassName object = value;', 'ClassName object = ClassName();', 'ClassName object = new ClassName();');
+insert into question values (113, 1, 13, 'What statement CANNOT be used outside a loop?', 'None of the provided answers are correct.', 'return', 'break', 'continue', 'There are more than 1 correct answer provided.');
+insert into question values (114, 1, 14, 'Which of the following is NOT an escape sequence in Java?', '\\r', '\\f', '\\b', '\\t', '\\a');
+insert into question values (115, 1, 15, 'Which of the following is a relational operator?', '->', '&', '|', '=>', '!=');
+insert into question values (116, 1, 16, 'Which of the following is NOT a logical operator?', '^', '&&', '!', '*', '<=');
+insert into question values (117, 1, 17, 'Select the HIGHEST precedence.', '^', '=', '&&', '!', 'var++');
+insert into question values (118, 1, 18, 'Select the HIGHEST precedence.', '==', '<=', '%', '/', '+');
+insert into question values (119, 1, 19, 'Select the LOWEST precedence.', '*', '%', '-', '&&', '/=');
+insert into question values (120, 1, 20, 'Select the LOWEST precedence.', '!', '%', '==', 'var--', '&&');
+insert into question values (121, 1, 21, 'Which pair of the operators have the same precedence?', '% and %=', '! and ^', '== and <=', '&& and ||', '= and +=');
+insert into question values (122, 1, 22, 'What is the size of a char', '7', '32', '4', '8', '16');
+insert into question values (123, 1, 23, 'Which of the following can we use to compare 2 String?', 'All 3 methods.', 'str1.compareTo(str2)', 'str1 == str2', 'str1.equals(str2)', 'Only 2 methods of the choices.');
+insert into question values (124, 1, 24, 'What is NOT a UI control in JavaFX?', 'TextField', 'CheckBox', 'Button', 'Label', 'HBox');
+insert into question values (125, 1, 25, 'Which of the following are Java keywords?', 'throw','void','private', 'static', 'All of the above.');
+
+insert into question values (201, 2, 1, 'Can we overload the main() method? If no, why? If yes, how?', 'No, because the compiler will be confused.', 'Yes, but at least one of them must be a static method like "public static void main(String[] args)".', 'None of the provided answers are correct.', 'No, it is forbidden in Java.', 'Yes, but only one of them must be "public static void main(String[] args)".');
+insert into question values (202, 2, 2, 'Which of the following is TRUE for switch statements?', 'Switch-expression cannot be String.', 'break statement is required for each case.', 'None of the provided answers are correct.', 'There are more than 1 correct answer provided.', 'default case is optional.');
+insert into question values (203, 2, 3, 'Which of the following returns TRUE?', 'false || true && false || false && true', 'false && true && false || false', 'false && true || false && true', 'true && false || false', 'true || true && false');
+insert into question values (204, 2, 4, 'Which one of these choices is NOT correct?', 'Array List is NOT synchronized.', 'Array List does NOT define the increment size.', 'Vector defines the increment size.', 'Vector is slow as it is thread safe.', 'Vector is NOT synchronized.');
+insert into question values (205, 2, 5, 'What is the size of short variable?', '2 bit', '8 bit', '4 bit','32 bit', '16 bit');
+insert into question values (206, 2, 6, 'What is NOT true about local variable?', 'Variables definedinside methods, constructors or block are called local variables.', 'Variablesdefined outside methods, constructors or block are called local variables.', 'None of the provided answers is correct.', 'All of the choices are correct.', 'A local variable can be used everywhere inside a class.');
+insert into question values (207, 2, 7, 'Which of the following is false about String?', 'We do not have to use String library.', 'String is an object.', 'None of the provided answers is correct.', 'All of the choices are correct.', 'String is a primary datatype.');
+insert into question values (208, 2, 8, 'Which of the following is true?', 'All of the choices arecorrect.', 'Each catch block must catch just 1 exception.', 'try block isoptional.', 'catch block is optional.', 'finally block is optional.');
+insert into question values (209, 2, 9, 'This is the parent of Error and Exception classes.', 'None of the answers provided is correct.', 'Catchable','MainError', 'MainException', 'Throwable');
+insert into question values (210, 2, 10, 'What will be the result of \\nint a = 3.5;', 'None of the provided answers is correct.', '3 will be stored in a.', '3.5 will be stored in a.', 'RunTime Error.', 'Complication Error.');
+insert into question values (211, 2, 11, 'int i = "2" + "3";  What is value of i?', 'There are more than 1 correct answer provided.', 'None of the provided answers are correct.', '23', '101', 'Error.');
+insert into question values (212, 2, 12, 'Whatdoes AWT stand for?', 'Automatic Window Table', 'Automatic Window Toolkit','Abstract Window Thread', 'Abstract Window Table', 'Abstract Window Toolkit');
+insert into question values (213, 2, 13, 'How many sorting types are in Java?', '6', '5', '4', '3', '7');
+insert into question values (214, 2, 14, 'Which of these are legal identifiers?', 'None of them.', 'number_1', 'number_a', '$1234', 'All of them.');
+insert into question values (215, 2, 15, 'Which of these are legal identifiers? \\n(A) 1alpha \\n(B) xy+abc \\n(C) FoO', 'A', 'B', 'C', 'Neither of them.', 'All of them.');
+insert into question values (216, 2, 16, 'Which of the following statements about the Java language is true?', 'OOP does not have meaning in programming.', 'None of the provided answers is correct.', 'Java supports only OOP approach.', 'Java supports only procedural approach towards programming.', 'Both procedural and OOP are supported in Java.');
+insert into question values (217, 2, 17, 'Which of the following are keywords in Java? \\n(A) implement \\n(B) friend \\n(C) NULL \\n(D) synchronized', 'A and C', 'A and B', 'C', 'A', 'D');
+insert into question values (218, 2, 18, 'Which of these are legal array declarations or definitions? \\n(A) int *x; \\n(B) int[ ] [ ]x[ ]; \\n(C) int x[5];', 'All of the provided answers is correct.', 'None of the provided answers is correct.', 'A', 'C', 'B');
+insert into question values (219, 2, 19, 'Which of the following statements is false about objects?', 'None of the provided answers is correct.', 'An instance of a class is an object.', 'Object is the super class of all other classes.', 'Objects can access both static and instance data.', 'Objects do not permit encapsulation.');
+insert into question values (220, 2, 20, 'The class Hashtable is used to implement which collection interface?', 'Tree', 'SortedSet', 'Set', 'List', 'Map');
+insert into question values (221, 2, 21, 'TreeMap class is used to implement which collection interface?', 'List', 'Set', 'SortedSet', 'Tree', 'SortedMap');
+insert into question values (222, 2, 22, 'Which of the following is NOT a method of collection class in Java?', 'Vector', 'Stack', 'LinkedList', 'ArrayDeque', 'Set');
+insert into question values (223, 2, 23, 'Which of the following is legal JSP syntax to print the value of i?', '<%= i %>', '<%= i; %>', '<%int i = 1%>', '<%int i = 1; i; %>', '<%int i = 1;%>');
+insert into question values (224, 2, 24, 'images/224.PNG', 'All the lines are correct and the program compiles.', 'The line labeled 4.', 'The line labeled 1.', 'The line labeled 2.', 'The line labeled 3.');
+insert into question values (225, 2, 25, 'A JavaBeans component has the following field: \\n\\nprivate boolean enabled; \\n\\nWhich two pairs of method declarations follow the JavaBeans standard for accessing this field?', 'public boolean getEnabled(boolean enabled) \\npublic void setEnabled()', 'public void setEnabled(boolean enabled) \\npublic boolean getEnabled()', 'public void setEnabled(boolean enabled) \\npublic void isEnabled()', 'public boolean setEnabled(boolean enabled) \\npublic boolean getEnabled()', 'public void setEnabled(boolean enabled) \\npublic boolean isEnabled()');
+
+insert into question values (301, 3, 1, 'Which of the following is a thread safe?', 'Nothing is thread safe in Java.', 'None of the provided answers is correct.', 'Both of them.', 'StringBuilder', 'StringBuffer');
+insert into question values (302, 3, 2, 'What will happen if static modifier is removed from the signatureof main method?', 'Nothing. The code will be successfullt compiled.', 'LogicalError.', 'RunTime Error: NoMainFound.', 'RunTime Error:MainLostError.', 'RunTime Error: NoSuchMethodError.');
+insert into question values (303, 3, 3, 'What is an applet?', 'It can be embedded into a web page.', 'Itruns inside the web browser and works at client side.', 'It is embedded in an HTML page using the APPLET tag and hosted on aweb server.', 'It is embedded in an HTML page using the OBJECT tagand hosted on a web server.', 'There are more than 1 correct answer.');
+insert into question values (304, 3, 4, 'images/304.PNG', '2', 'test', 'test-1', '0', '1');
+insert into question values (305, 3, 5, 'images/305.PNG', '13', 'The class compiles and runs, but does not print anything.', 'The number 1 gets printed with AssertionError.', 'The number 2 gets printed with AssertionError.', 'The program generates a compilation error.');
+insert into question values (306, 3, 6, 'What is the difference between servlets and applets? \\n(A) Servlets executes on Servers, where as Applets executes on Browser. \\n(B) Servlets have no GUI, where as an Applet has GUI. \\n(C) Servlets creates static web pages, where as Applets creates dynamic web pages. \\n(D) Servlets can handle only a single request, where as Applet can handle multiple requests.', 'A and D', 'A, B, C, and D', 'A and C', 'A, B, and C', 'A and B');
+insert into question values (307, 3, 7, 'The major difference between servlet and CGI is... \\n(A) Servlets executes slower compared to CGI. \\n(B) Servlets are thread based and CGI is process based. \\n(C) Servlet has no platform specific API, where as CGI has.', 'A', 'C', 'A, B, and C', 'A and B', 'B');
+insert into question values (308, 3, 8, 'For a given ServletResponse response, which retrieve an object for writing text data?', 'None of the provided answers is correct.', 'response.getWriter(Writer.OUTPUT_TEXT)', 'response.getWriter().getOutputStream()', 'response.getOutputWriter()', 'response.getWriter()');
+insert into question values (309, 3, 9, 'Given an HttpSession session, a ServletRequest request, and a ServletContext context, which retrieves a URL to /WEB-INF/myconfig.xml within a web application?', 'None of the provided answers is correct.', 'request.getResource("/WEB-INF/myconfig.xml")', 'session.getResource("/WEB-INF/myconfig.xml")', 'getClass().getResource("/WEB-INF/myconfig.xml")', 'context.getResource("/WEB-INF/myconfig.xml")');
+insert into question values (310, 3, 10, 'images/310.PNG', '642', '123456', 'RunTime Error', 'Compliation fails.', '654321');
+insert into question values (311, 3, 11, 'images/311.PNG', '10', '0', '/ by 0', 'error', 'Compliation fails.');
+insert into question values (312, 3, 12, 'Given: \\n\\tA and E are classes \\n\\tB and D are interfaces \\n\\tC is an abstract class \\n\\nWhich statements are true? \\n\\n(A) class F implements B,C{ } \\n(B) class F extends A,E{ } \\n(C) class F extends E{ } \\n(D) class F implements B,D{ } \\n(E) class F implements B{ }', 'A and B', 'A and C', 'C and D', 'B and E', 'C, D and E');
+insert into question values (313, 3, 13, 'images/313.PNG', 'Compilation fails.', 'An exception is thrown at runtime.', '20', '24', '22');
+insert into question values (314, 3, 14, 'images/314.PNG', '6 7', 'An exception is thrown at runtime.', 'Compilation fails.', 'Short Long', 'int Long');
+insert into question values (315, 3, 15, 'images/315.PNG', 'None of the provided answers is correct.', 'request.getReader();', 'request.getWriter();', 'request.getResourceAsStream();', 'request.getInputStream();');
+insert into question values (316, 3, 16, 'images/316.PNG', '0', '2', 'Compilation fails due to an error on line 8.', 'Compilation fails due to an error on line 7.', 'Compilation fails due to an error on line 12.');
+insert into question values (317, 3, 17, 'images/317.PNG', '1', 'null', '10', '0', 'An IndexOutOfBoundsException is thrown at runtime.');
+insert into question values (318, 3, 18, 'images/318.PNG', 'int b = 16', 'int b = 18', 'int a = 16', 'int a = 11;', 'int a = 18;');
+insert into question values (319, 3, 19, 'images/319.PNG', 'The code will compile without changes.', 'The code will compile if public Tree() { Plant(); } is added to the Tree class.', 'The code will compile if public Plant() { Tree(); } is added to the Plant class.', 'The code will compile if public Plant() { Plant("fern"); } is added to the Plant class.', 'The code will compile if public Plant() { this("fern"); } is added to the Plant class.');
+insert into question values (320, 3, 20, 'images/320.PNG', 'Set.sort(s);', 's = new SortedSet(s);', 'Collections.sort(s);', 'Arrays.sort(s);', 's = new TreeSet(s);');
+insert into question values (321, 3, 21, 'images/321.PNG', 'The program prints "test + test"', 'The program does not compile because statement "test = test + test" is illegal.', 'The program prints "abcabc"', 'The program prints "abc"', 'The class does not compile because the top level class cannot be protected.');
+
+
+insert into question values (322, 3, 22, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (323, 3, 23, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (324, 3, 24, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (325, 3, 25, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+
+insert into question values (401, 4, 1, 'q101', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (402, 4, 2, 'q102', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (403, 4, 3, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (404, 4, 4, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (405, 4, 5, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (406, 4, 6, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (407, 4, 7, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (408, 4, 8, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (409, 4, 9, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (410, 4, 10, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (411, 4, 11, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (412, 4, 12, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (413, 4, 13, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (414, 4, 14, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (415, 4, 15, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (416, 4, 16, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (417, 4, 17, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+insert into question values (418, 4, 18, 'q103', 'c1', 'c2', 'c3', 'c4', 'ans');
+
+
+insert into question values (419, 4, 19, 'images/419.PNG', '1 John 22 1 John 22', 'Compilation fails.', 'ClassCastException is thrown at runtime.', '1 John 25 1 John 25', '1 John 25 1 John 22');
+insert into question values (420, 4, 20, 'images/420.PNG', 'Writing...Writing code', 'Compilation fails.', 'Writing code', 'Writing book', 'Writing...');
+insert into question values (421, 4, 21, 'images/421.PNG', 'Declaring the doThings() method as static would make the class thread-safe.', 'The data in variable "x" are protected from concurrent access problems.', 'Compilation fails.', 'An exception is thrown at runtime.', 'Synchronizing the run() method would make the class thread-safe.');
+insert into question values (422, 4, 22, 'images/422.PNG', 'Compilation fails.', 'An exception is thrown at runtime.', 'The code executes and prints "running".', 'The code executes and prints "runningrunning".', 'The code executes and prints "runningrunningrunning".');
+insert into question values (423, 4, 23, 'images/423.PNG', 'A, B and E', 'A and D', 'B and E', 'B and D', 'A, C, and E');
+insert into question values (424, 4, 24, 'images/424.PNG', 'Compilation succeeds.', 'Compilation fails due to errors on multiple lines.', 'Compilation fails due only to an error on line 3.', 'Compilation fails due only to an error on line 2.', 'Compilation fails due only to an error on line 1.');
+insert into question values (425, 4, 25, 'images/425.PNG', 'Exactly two objects are serialized.', 'Exactly one object is serialized.', 'Compilation fails.', 'done', 'exc');
+
+create table user
+(
+name varchar(40) not null primary key,
+id varchar(4) not null,
+numOfTry int,
+score double
+);
+
+insert into user values ('Mary', '0000', 0, 0);
+insert into user values ('Susan', '1111', 1, 68.4);
+insert into user values ('Tom', '2222', 1, 80);
+insert into user values ('Josh', '2222', 2, 90);
+
